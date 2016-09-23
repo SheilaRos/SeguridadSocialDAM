@@ -28,7 +28,7 @@ public class Persona {
 
         this.DNI = DNI;
     }
-
+//aksalkjlakdjlakjdlkajlk
     public String getNumSeguridadSocial() {
 
         return NumSeguridadSocial;
