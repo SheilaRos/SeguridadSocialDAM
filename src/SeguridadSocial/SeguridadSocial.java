@@ -1,9 +1,6 @@
 package SeguridadSocial;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class SeguridadSocial{
@@ -47,6 +44,12 @@ public class SeguridadSocial{
             }
             return aux;
        */
+    }
+    public Persona obtenerPersonaSalarioMax(){
+        return personaMapDNI.values().stream().max(Comparator.comparing(Persona::getSalario)).get();
+    }
+    public Persona obtenerPersonaSalarioMin(){
+        return personaMapDNI.values().stream().min(Comparator.comparing(Persona::getSalario)).get();
     }
     public List<Persona> obtenerPersonasMayoresQue(int edad){
         return personaMapDNI.values().stream().filter(persona -> persona.getEdad()>edad).collect(Collectors.toList());

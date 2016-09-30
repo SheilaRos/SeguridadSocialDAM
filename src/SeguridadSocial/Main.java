@@ -31,6 +31,10 @@ public class Main {
 
         System.out.println("obtenerPersonasMayoresQue: " + seguridadSocial.obtenerPersonasMayoresQue(25));
 
+        System.out.println("obtenerPersonaSalarioMaximo: " + seguridadSocial.obtenerPersonaSalarioMax());
+
+        System.out.println("obtenerPersonaSlarioMinimo: " + seguridadSocial.obtenerPersonaSalarioMin());
+
 
     }
 }
