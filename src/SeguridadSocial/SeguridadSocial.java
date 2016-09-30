@@ -24,8 +24,10 @@ public class SeguridadSocial{
        }
     }
     public void bajaPersona(String dni) {
-        personaMapSS.remove(personaMapDNI.get(dni).getNumSeguridadSocial());
-        personaMapDNI.remove(dni);
+        if(personaMapDNI.containsKey(dni)){
+            personaMapSS.remove(personaMapDNI.get(dni).getNumSeguridadSocial());
+            personaMapDNI.remove(dni);
+        }
     }
     public Persona obtenerPersonaPorDNI(String dni) {
         return personaMapDNI.get(dni);
